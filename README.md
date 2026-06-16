@@ -19,10 +19,10 @@ This project implements a simple synchronous FIFO buffer that stores data in the
 
 | Parameter | Value |
 |------------|---------|
-| Data Width | 8-bit |
-| FIFO Depth | 8 Entries |
+| Data Width | 8-bit (default) |
+| FIFO Depth | 16 Entries (default) |
+| Address Width | 4-bit |
 | Clock Type | Single Clock |
-| Reset Type | Synchronous Reset |
 
 ### Inputs
 
@@ -47,8 +47,8 @@ Test cases performed:
 - Reset operation
 - Sequential data write
 - Sequential data read
+- Data integrity verification
 - Empty flag verification
-- Full flag verification
 
 Simulation confirms correct FIFO behavior and data ordering.
 
